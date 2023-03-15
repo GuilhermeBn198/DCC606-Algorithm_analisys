@@ -1,0 +1,30 @@
+inicio
+	temp = vet[1]
+	para i = 2 to n //N>1
+		se temp < vet[i] entao
+			temp = vet[i]
+			max = temp
+		fim-se
+fim
+
+
+imagine a INSTANCIA VET={5,1,3}
+aqui queremos pegar o valor maximo desse vetor
+
+
+|  |  |  |  |  | temos N-1 comparações a se fazer
+
+
+comportamento linear é quando o comportamente está diretamente atrelado à entrada de um algoritmo
+quando N tende à infinito entao o comportamento tende à infinito
+
+O MELHOR CASO DESSE ALGORITMO É 
+F(N) = O
+O PIOR CASO É 
+F(N) = N - 1
+O CASO MÉDIO É IGUAL AO PIOR CASO
+
+CADA ALGORITMO TEM QUE SER ANALISADO, É NESSA HORA QUE O PROTAGONISTA FALA O NOME DO ANIME
+ANALISE DE ALGORITMOS!!!!!
+
+
