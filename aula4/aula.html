@@ -116,6 +116,49 @@
 				</code>
 			</li>
 		</ul>
-		
+		<div>
+			<h2>comparativos de velocidade entre os 3 algoritmos supracitados:</h2>
+			<table colgroup>
+				<col>
+				<col span="1" style="border-right: 1px solid black;">
+				<col>
+				<col span="1" style="border-right: 1px solid black;">
+				<col>
+				<tr>
+					<th>Algoritmo</th>
+					<th>Melhor caso</th>
+					<th>Pior caso</th>
+					<th>Caso médio</th>
+					<th>Estabilidade</th>
+				</tr>
+				<tr>
+					<td>Bubble Sort</td>
+					<td>O(n)</td>
+					<td>O(n^2)</td>
+					<td>O(n^2)</td>
+					<td>Estável</td>
+				</tr>
+				<tr>
+					<td>Insertion Sort</td>
+					<td>O(n)</td>
+					<td>O(n^2)</td>
+					<td>O(n^2)</td>
+					<td>Estável</td>
+				</tr>
+				<tr>
+					<td>Selection Sort</td>
+					<td>O(n^2)</td>
+					<td>O(n^2)</td>
+					<td>O(n^2)</td>
+					<td>Não Estável</td>
+				</tr>
+			</table>
+			<p>
+				O melhor caso para o Bubble Sort e o Insertion Sort ocorre quando a lista a ser ordenada já está ordenada ou quase ordenada, resultando em um tempo de execução de O(n), onde n é o número de elementos na lista. O pior caso para ambos os algoritmos ocorre quando a lista está completamente desordenada, resultando em um tempo de execução de O(n^2). <br> <br>
+
+				O melhor caso para o Selection Sort ocorre quando a lista está completamente desordenada, resultando em um tempo de execução de O(n^2), que é o mesmo que o pior caso para o algoritmo. O pior caso também ocorre quando a lista está completamente desordenada, resultando em um tempo de execução de O(n^2).
+			</p>
+		</div>
+	</div>
 </body>
 </html>
