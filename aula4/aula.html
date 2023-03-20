@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Algoritmos</title>
+	<style>
+		table, th, td {
+			border: 1px solid black;
+			border-collapse: collapse;
+			padding: 8px;
+			text-align: center;
+		}
+		.coluna-destaque {
+			background-color: #f2f2f2;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<h1>lições de casa</h1>
+		<h2>análise de tempo dos algoritmos insertion sort, bubble sort e selectionsort.</h2>
+		<h3>mas primeiro irei reconceituar os algoritmos de ordenação:</h3>
+
+		<p>esses 3 algoritmos são métodos clássicos de ordenação de elementos em uma lista. Eles são relativamente simples de entender e implementar, mas podem ser ineficientes em grandes conjuntos de dados.</p>
+		<ul>
+			<h4>insertion sort</h4>
+			<li>
+				<p>
+					O algoritmo de Insertion Sort é um algoritmo de ordenação que percorre uma lista de elementos e insere cada elemento em sua posição correta na parte já ordenada da lista. Esse processo é repetido até que todos os elementos da lista estejam na posição correta, resultando em uma lista ordenada. <br> <br>
+
+					O algoritmo de Insertion Sort é implementado com um laço externo que percorre a lista a ser ordenada, começando do segundo elemento e indo até o último. Para cada elemento, o algoritmo realiza um laço interno que percorre a parte já ordenada da lista, do final para o início, e insere o elemento na posição correta. <br> <br>
+
+					O processo de inserção é realizado comparando o elemento atual com o elemento anterior na lista já ordenada. Se o elemento atual for menor que o elemento anterior, os dois elementos são trocados. Esse processo de comparação e troca é repetido até que o elemento atual encontre a sua posição correta na lista já ordenada. <br> <br>
+
+					O Insertion Sort é um pouco mais eficiente que o Bubble Sort, mas ainda pode ser ineficiente para listas muito grandes. Sua complexidade de tempo é O(n^2), o que significa que o tempo de execução cresce exponencialmente com o tamanho da lista.
+				</p>
+				<h5>exemplo em pseudo-código:</h5>
+				<code>
+					insertionSort(lista): <br>
+					n = tamanho(lista) <br>
+					para i de 1 até n-1: <br>
+					  chave = lista[i] <br>
+					  j = i-1 <br>
+					  enquanto j >= 0 e lista[j] > chave: <br>
+						lista[j+1] = lista[j] <br>
+						j = j-1 <br>
+					  lista[j+1] = chave <br>
+					retornar lista <br>
+				</code>
+				<br>
+			</li>
+			<h4>bubble sort</h4>
+			<li>
+				<p>
+					O algoritmo de Bubble Sort é um algoritmo de ordenação que percorre a lista várias vezes, comparando cada elemento com o seu vizinho e trocando de posição caso esteja fora de ordem. Esse processo é repetido até que nenhum elemento precise mais ser trocado de posição, resultando em uma lista ordenada.  <br> <br>
+
+					O algoritmo de Bubble Sort é implementado com um laço externo que percorre a lista a ser ordenada, comparando cada elemento com o seu vizinho imediato e trocando de posição se necessário. Esse processo é repetido até que todos os elementos da lista estejam na posição correta.  <br> <br>
+
+					Durante cada iteração do laço externo, o algoritmo percorre a lista com um laço interno, comparando o elemento atual com o seu vizinho imediato e trocando de posição se o elemento atual for maior que o seu vizinho. Esse processo é repetido até que o final da lista seja alcançado.  <br> <br>
+
+					O processo de troca de posições é realizado comparando o elemento atual com o seu vizinho imediato. Se o elemento atual for maior que o seu vizinho, os dois elementos são trocados de posição. Esse processo de comparação e troca é repetido até que a lista esteja completamente ordenada. <br> <br>
+
+					Embora seja fácil de entender e implementar, o Bubble Sort é um algoritmo ineficiente, especialmente para listas grandes. Sua complexidade de tempo é O(n^2), o que significa que o tempo de execução cresce exponencialmente com o tamanho da lista.
+				</p>
+				<h5>exemplo em pseudo-código:</h5>
+				<code>
+					bubbleSort(lista): <br>
+					n = tamanho(lista) <br>
+					para i de 0 até n-1: <br>
+					  para j de 0 até n-i-1: <br>
+						se lista[j] > lista[j+1]: <br>
+						  trocar(lista[j], lista[j+1]) <br> 
+					retornar lista <br>
+					<br>
+					função trocar(a, b) <br>
+					temp = a <br>
+					a = b <br>
+					b = temp <br> 
+					fim função <br>
+				</code>
+
+			</li>
+			<br>
+			
+			<h4>selection sort</h4>
+			<li>
+				<p>
+					O algoritmo de Selection Sort é um algoritmo de ordenação que seleciona o menor elemento da lista e o coloca na primeira posição, o segundo menor elemento é colocado na segunda posição, e assim sucessivamente. Esse processo é repetido até que todos os elementos da lista estejam na posição correta, resultando em uma lista ordenada.<br> <br>
+
+					O algoritmo de Selection Sort é implementado com um laço externo que percorre a lista a ser ordenada, selecionando o menor elemento e colocando-o na primeira posição da lista. Em seguida, o laço externo avança para a próxima posição e repete o processo, selecionando o menor elemento na parte restante da lista e colocando-o na posição correta.<br> <br>
+
+					O processo de seleção é realizado comparando cada elemento da lista com o menor elemento encontrado até o momento. Se um elemento for encontrado que seja menor que o menor elemento atual, ele se torna o novo menor elemento. Esse processo de comparação é repetido até que o menor elemento da lista seja encontrado. Depois de encontrar o menor elemento, ele é colocado na posição correta na lista, e o processo de seleção continua para o restante da lista. <br> <br>
+
+					O Selection Sort é mais eficiente que o Bubble Sort e o Insertion Sort, mas ainda pode ser ineficiente para listas muito grandes. Sua complexidade de tempo também é O(n^2).
+				</p>
+				<h5>exemplo em pseudo-código:</h5>
+				<code>
+					selectionSort(lista): <br>
+					n = tamanho(lista) <br>
+					para i de 0 até n-1: <br>
+						indice_minimo = i <br>
+						para j de i+1 até n-1: <br>
+						se lista[j] < lista[indice_minimo]: <br>
+							indice_minimo = j <br>
+						se indice_minimo != i: <br>
+						trocar(lista[i], lista[indice_minimo]) <br>
+					retornar lista <br>
+					<br>
+					função trocar(a, b) <br>
+					temp = a <br>
+					a = b <br>
+					b = temp <br> 
+					fim função <br>
+				</code>
+			</li>
+		</ul>
+		
+</body>
+</html>
