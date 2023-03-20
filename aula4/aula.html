@@ -173,10 +173,116 @@
 		<h1>Anotações da aula 20/03/23:</h1>
 		<div>
 			<h2>Notação Assintótica</h2>
+			<p>
+				é a forma como nós trabalhamos a análise de algoritmos de um ponto de vista imparcial, onde avaliamos algoritmos com base em seu desempenho de tempo(não atrelado a segundos)
+			</p>
+			<div>
+				<h3>como se analisa um algoritmo</h3>
+				<ul>
+					<li>
+						tempo de cpu
+					</li>
+					<li>
+						modelo matemático -- F(N)
+					</li>
+				</ul>
+			</div>
+			<div>
+				<h3>tipos de notação</h3>
+				<ul>
+					<li>
+						<h4>BIG O</h4>
+						<p>é usado para delimitar o limite superior em relação ao tempo. ex: no pior caso meu algoritmo tem O(n²)</p>
+						REGRA DA SOMA    O(f(n))  +  O(g(n)) <br>
+						▪ Suponha 3 trechos de programas cujos tempos de execução sejam
+						O(n), O(n2) e O(nlogn). <br>
+						▪ O tempo de execução dos 2 primeiros trechos é O(max(n,n2), que é
+						O(n2). <br>
+						▪ O tempo de execução de todos os 3 trechos é, então, O(max(n2,
+						nlogn)), que é O(n2) <br>
+					</li>
+					<li>
+						<h4>Notação little O</h4>
+						<p></p>
+					</li>
+					<li>
+						<h4>Notação theta</h4>
+						<p>
+							- f(n) = Θ(g(n)) <br>
+							• Lê-se f(n) é da mesma ordem de g(n). <br>
+							• Θlimita a função por fatores constantes. <br>
+							- g(n) é um limite assintótico superior e inferior para f(n)
+							ou 
+							- g(n) é um limite assintótico firme para f(n). <br>
+						</p>
+					</li>
+					<li>
+						<h4>Notação ômega</h4>
+						<p>
+							f(n) = Ω(g(n)) <br>
+							Lê-se  f(n) é de ordem no mínimo  g(n) <br>
+							Ω define um limite inferior para a função,  por um  fator 
+							constante. <br>
+							f (n) é um  limite assintótico  inferior para g(n) <br>
+							</p>
+					</li>
+					<li>
+						<h4>Notação little ômega</h4>
+						<p>
+							'O limite assintótico inferior definido pela notação ω pode ser
+							assintoticamente firme ou não. <br>
+							EXEMPLO: <br>
+							O limite 2n2 = ω(n2) é assintoticamente firme <br>
+							O limite 2n2 = ω(n) não é assintoticamente firme. <br>
+							A notação ω é usada para definir um limite inferior que não é
+							assintoticamente firme.' <br>
+
+						</p>
+					</li>
+				</ul>
+			</div>
 		</div>
 		<div>
-			<h2>etc2</h2>
+			<h2>instancia de problema</h2>
+			A= {1,5,2,3} = #16 -- o limite do problema tende ao infinito
+			int = Z
+			Aº = {1,2,3,5}
 		</div>
+		<div>
+			<h2>para que ser uma estrutura de dados</h2>
+			<p>serve para organizar dados, manipular etc -- formente ligado ás politicas de uso de dados</p> 
+			<p>
+				são divididas em 3:
+				<ul>
+					<li>encadeadas:</li>
+					<li>arvores:</li>
+					<li>grafos:</li>
+				</ul>
+			</p>
+		</div>
+		<div>
+			<h2>ordem de crescimento</h2>
+			<p>N entradas para T tempos de execução</p>
+			<p>para se executar certas entradas, leva-se certo tempo para executar</p>
+
+			<h3>FUNÇÃO DE CRESCIMENTO DE TEMPO EM RELAÇÃO A ENTRADA DE UM ALGORITMO</h3>
+			<P>CADA ALGORITMO TEM UMA ESTRATÉGIA PROPRIA PARA RESOLVER UM PROBLEMA</P>
+			<br>
+		</div>
+	</div>
+
+	<div>
+		<p>REVISAO DE MATEMATICA!!!</p>
+		<ul>
+			<p>propriedades</p>
+			<li>limites</li>
+			<li>logaritmos</li>
+			<li>exponenciais</li>
+			<li>pa</li>
+			<li>pg</li>
+			<li>somatorio</li>
+			<li>pseudo-código</li>
+		</ul>
 	</div>
 </body>
 </html>
